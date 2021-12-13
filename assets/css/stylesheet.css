@@ -1,15 +1,68 @@
-:root {
-    --primary-color: blue;
-    --secondary-color: gray;
-    --tertiary-color: teal;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
 }
 
 header {
+    padding: 20px 35px;
     display: flex;
     flex-wrap: wrap;
-    background-color: var(--primary-color);
+    justify-content: space-between;
+    background-color: rgb(78, 82, 82);
+}
+
+header div {
+    background-color: turquoise;
+}
+
+header div h1 {
+    margin: 8px;
+}
+
+header div h1 a {
+    color: black;
+    text-decoration: none;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 10px;
+    text-decoration: underline 2px;
+    color: turquoise;
+}
+
+.hero {
+    background-image: url("../images/hero-img.jpeg");
+    background-size: cover;
+    background-position: center;
+    padding: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.hero div {
+    background-color: turquoise;
+}
+
+.hero h2 {
+    color: black;
+}
+
+.my-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
