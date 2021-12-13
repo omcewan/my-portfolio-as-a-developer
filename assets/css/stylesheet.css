@@ -9,23 +9,21 @@ body {
     background-color: aliceblue;
 }
 
+/* Header styling starts here */
 header {
-    padding: 20px 35px;
+    padding: 10px 20px 10px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: rgb(78, 82, 82);
 }
 
-header div {
+header h1 {
     background-color: turquoise;
+    padding: 0 0 0 60px;
 }
 
-header div h1 {
-    margin: 8px;
-}
-
-header div h1 a {
+header h1 a {
     color: black;
     text-decoration: none;
 }
@@ -38,8 +36,10 @@ header nav ul {
 }
 
 header nav ul li a {
+    display: inline-block;
     padding: 10px 10px;
     text-decoration: underline 2px;
+    text-underline-offset: 6px;
     color: turquoise;
 }
 
@@ -64,5 +64,33 @@ header nav ul li a {
 .my-info {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.my-info div {
+    flex-basis: 50%;
+}
+
+.my-info article {
+    flex-basis: 50%;
+}
+
+.my-work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.my-work h2 {
+    flex-basis: 40%;
+}
+
+.surf-report {
+    flex-basis: 20%;
+}
+
+.my-projects {
+    flex-basis: 10%;
 }
