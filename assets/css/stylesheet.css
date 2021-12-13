@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: aliceblue;
+    background-color: rgb(215, 232, 247);
 }
 
 /* Header styling starts here */
@@ -42,7 +42,9 @@ header nav ul li a {
     text-underline-offset: 6px;
     color: turquoise;
 }
+/* Header styling ends here */
 
+/* Hero styling begins here */
 .hero {
     background-image: url("../images/hero-img.jpeg");
     background-size: cover;
@@ -50,16 +52,19 @@ header nav ul li a {
     padding: 80px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
 }
 
 .hero div {
     background-color: turquoise;
+    position: absolute;
+    right: 28px;
+    padding: 6px;
 }
 
 .hero h2 {
     color: black;
 }
+/* Hero styling ends here */
 
 .my-info {
     display: flex;
