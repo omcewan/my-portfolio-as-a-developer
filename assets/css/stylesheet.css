@@ -66,36 +66,63 @@ header nav ul li a {
 }
 /* Hero styling ends here */
 
+/* About Me styling starts here */
 .my-info {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-}
-
-.my-info div {
-    flex-basis: 50%;
+    margin: 20px 0 0 0;
 }
 
 .my-info article {
-    flex-basis: 50%;
+    flex-basis: 65%;
+    border-left: solid 2px rgb(27, 73, 116);
+    margin: 0 0 0 6px;
+    padding: 0 0 0 20px;
 }
+/* About Me styling ends here */
 
+/* Work styling starts here */
 .my-work {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
+    margin: 20px 0 0 0;
 }
 
-.my-work h2 {
-    flex-basis: 40%;
+.my-work section {
+    flex-basis: 64%;
+    border-left: solid 2px rgb(27, 73, 116);
+    margin: 0 0 0 6px;
+    padding: 0 0 0 20px;
 }
 
-.surf-report {
-    flex-basis: 20%;
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
-.my-projects {
-    flex-basis: 10%;
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px 0 0 0;
 }
+
+.contact-info section {
+    flex-basis: 70%;
+    border-left: solid 2px rgb(27, 73, 116);
+    margin: 0 0 0 6px;
+    padding: 0 0 0 20px;
+}
+
+.personal-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
