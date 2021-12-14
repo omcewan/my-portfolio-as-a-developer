@@ -20,7 +20,7 @@ header {
 
 header h1 {
     background-color: turquoise;
-    padding: 0 0 0 60px;
+    padding: 0 0 0 20px;
 }
 
 header h1 a {
@@ -46,23 +46,25 @@ header nav ul li a {
 
 /* Hero styling begins here */
 .hero {
-    background-image: url("../images/hero-img.jpeg");
+    background-image: url("../images/hero-img-3.jpeg");
     background-size: cover;
     background-position: center;
-    padding: 80px;
+    padding: 100px;
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: flex-end;
 }
 
 .hero div {
     background-color: turquoise;
-    position: absolute;
-    right: 28px;
-    padding: 6px;
+    position: relative;
+    left: 80px;
+    top: 80px;
+    padding: 4px;
 }
 
 .hero h2 {
-    color: black;
+    color: rgba(24, 28, 44, 1);
 }
 /* Hero styling ends here */
 
