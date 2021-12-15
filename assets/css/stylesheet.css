@@ -6,16 +6,16 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(215, 232, 247);
+    background-color: aliceblue;
 }
 
 /* Header styling starts here */
 header {
     padding: 20px 10px 10px 0;
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: space-between;
-    background-color: rgba(24, 28, 44, 1);
+    background-color: rgb(2, 110, 180);
 }
 
 header h1 {
@@ -24,13 +24,13 @@ header h1 {
 }
 
 header h1 a {
-    color: rgba(24, 28, 44, 1);
+    color: rgb(0 23 114);
     text-decoration: none;
 }
 
 header nav ul {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: space-between;
     list-style: none;
 }
@@ -48,83 +48,207 @@ header nav ul li a {
 .hero {
     background-image: url("../images/hero-img-3.jpeg");
     background-size: cover;
-    background-position: center;
-    padding: 100px;
+    background-position:center;
+    padding: 200px;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
 }
 
-.hero div {
-    background-color: turquoise;
-    position: relative;
-    left: 80px;
-    top: 80px;
-    padding: 4px;
-}
-
 .hero h2 {
     color: rgba(24, 28, 44, 1);
+    background-color: turquoise;
+    position: relative;
+    left: 180px;
+    top: 180px;
+    padding: 4px;
 }
 /* Hero styling ends here */
 
 /* About Me styling starts here */
 .my-info {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: center;
-    align-items: flex-start;
-    margin: 20px 0 0 0;
+    margin: 10px;
+}
+
+.my-info div {
+    flex-basis: 15%;
+    flex-grow: 1;
+}
+
+.my-info h2 {
+    text-align: right;
+    color: rgb(2 110 180);
 }
 
 .my-info article {
-    flex-basis: 65%;
-    border-left: solid 2px rgb(27, 73, 116);
-    margin: 0 0 0 6px;
-    padding: 0 0 0 20px;
+    border-left: solid 3px rgb(2 110 180);
+    margin: 0 0 0 10px;
+    padding: 0 0 0 10px;
+    flex-basis: 75%;
+    flex-grow: 1;
 }
 /* About Me styling ends here */
 
 /* Work styling starts here */
 .my-work {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: center;
-    align-items: flex-start;
-    margin: 20px 0 0 0;
+    margin: 10px;
 }
 
-.my-work section {
-    flex-basis: 64%;
-    border-left: solid 2px rgb(27, 73, 116);
-    margin: 0 0 0 6px;
-    padding: 0 0 0 20px;
+.my-work div {
+    flex-basis: 15%;
+    flex-grow: 1;
 }
 
-.projects {
+.my-work h2 {
+    text-align: right;
+    color: rgb(2 110 180);
+}
+
+div.projects {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: flex-start;
+    border-left: solid 3px rgb(2 110 180);
+    margin: 0 0 0 10px;
+    padding: 0 0 0 10px;
+    flex-basis: 75%;
+    flex-grow: 1;
+}
+
+div.surf-report  {
+    border:solid 2px rgb(2 110 180);
+    margin: 0 0 4px 0;
+    flex-basis: 100%;
+    padding: 100px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.surf-report h3 {
+    background-color: rgb(2 110 180);
+    position: relative;
+    top: 80px;
+    right: 100px;
+    text-align: right;
+    width: fit-content;
+    padding: 10px;
+    color: aliceblue;
+}
+
+div.led-wall {
+    flex-basis: 50%;
+    border: solid 2px rgb(2 110 180);
+    margin: 4px 4px 4px 0;
+    padding: 50px;
+}
+
+.led-wall h3 {
+    background-color: rgb(2 110 180);
+    position: relative;
+    top: 30px;
+    right: 50px;
+    text-align: right;
+    width: fit-content;
+    padding: 10px;
+    color: aliceblue;
+}
+    
+div.calculator {
+    border:solid 2px rgb(2 110 180);
+    margin: 4px 0px 4px 4px;
+    flex-grow: 50;
+    padding: 50px;
+}
+    
+.calculator h3 {
+    background-color: rgb(2 110 180);
+    position: relative;
+    top: 30px;
+    right: 50px;
+    text-align: right;
+    width: fit-content;
+    padding: 10px;
+    color: aliceblue;
+} 
+
+div.pastel-puzzles {
+    flex-basis: 50%;
+    border: solid 2px rgb(2 110 180);
+    margin: 4px 4px 0px 0;
+    padding: 50px;
+}
+    
+.pastel-puzzles h3 {
+    background-color: rgb(2 110 180);
+    position: relative;
+    top: 30px;
+    right: 50px;
+    text-align: right;
+    width: fit-content;
+    padding: 10px;
+    color: aliceblue;
+}
+    
+div.run-buddy {
+    border:solid 2px rgb(2 110 180);
+    margin: 4px 0px 0px 4px;
+    flex-grow: 50;
+    padding: 50px;
+}
+    
+.run-buddy h3 {
+    background-color: rgb(2 110 180);
+    position: relative;
+    top: 30px;
+    right: 50px;
+    text-align: right;
+    width: fit-content;
+    padding: 10px;
+    color: aliceblue;
 }
 
 .contact-info {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: center;
-    align-items: flex-start;
-    margin: 20px 0 0 0;
+    margin: 10px;
 }
 
-.contact-info section {
-    flex-basis: 70%;
-    border-left: solid 2px rgb(27, 73, 116);
-    margin: 0 0 0 6px;
-    padding: 0 0 0 20px;
+.contact-info div {
+    flex-basis: 15%;
+    flex-grow:1;
 }
+
+.contact-info h2 {
+    text-align: right;
+    color: rgb(2 110 180);
+}
+
 
 .personal-info {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: flex-start;
 }
 
+section.personal-info {
+    border-left: solid 3px rgb(2 110 180);
+    margin: 0 0 0 10px;
+    padding: 0 0 0 10px;
+    flex-basis: 75%;
+    flex-grow:1;
+}
+
+.personal-info div {
+    padding: 10px 10px;
+    text-decoration: underline 2px;
+    text-underline-offset: 2px;
+    flex-basis: 20%
+}
