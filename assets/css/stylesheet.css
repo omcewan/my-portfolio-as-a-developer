@@ -48,8 +48,8 @@ header nav ul li a {
 .hero {
     background-image: url("../images/IMG_0359_Original.jpg");
     background-size: cover;
-    background-position: top;
-    padding: 200px;
+    background-position: center;
+    padding: 500px;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
@@ -59,15 +59,12 @@ header nav ul li a {
     color: rgba(24, 28, 44, 1);
     background-color: turquoise;
     position: relative;
-    left: 180px;
-    top: 180px;
-    padding: 4px;
+    left: 480px;
+    top: 440px;
+    padding: 6px;
+    flex-basis: 36%;
+    font-size: 20px;
 }
-
-/* .hero img {
-    height: 20px;
-    position: relative;
-} */
 /* Hero styling ends here */
 
 /* About Me styling starts here */
@@ -139,6 +136,10 @@ div.surf-report  {
     background-size: cover;
 }
 
+div.surf-report:hover{
+    opacity: .5;
+}
+
 .surf-report h3 {
     background-color: rgb(2 110 180);
     position: relative;
@@ -161,6 +162,10 @@ div.led-wall {
     padding: 50px;background-image: url("../images/led-img.webp");
     background-position: center;
     background-size: cover;
+}
+
+div.led-wall:hover{
+    opacity: .5;
 }
 
 .led-wall h3 {
@@ -186,6 +191,10 @@ div.calculator {
     background-image: url("../images/calculator-img.jpeg");
     background-position: center;
     background-size: cover;
+}
+
+div.calculator:hover{
+    opacity: .5;
 }
     
 .calculator h3 {
@@ -213,6 +222,10 @@ div.pastel-puzzles {
     background-size: cover;
 }
 
+div.pastel-puzzles:hover{
+    opacity: .5;
+}
+
 .pastel-puzzles a {
     text-decoration: none;
     color:antiquewhite
@@ -238,6 +251,10 @@ div.run-buddy {
     background-position: center;
     background-size: cover;
 }
+
+div.run-buddy:hover{
+    opacity: .5;
+}
     
 .run-buddy h3 {
     background-color: rgb(2 110 180);
@@ -254,6 +271,9 @@ div.run-buddy {
     color:antiquewhite
 }
 
+/* Work Styling Ends here */
+
+/* Contact Info styling starts here */
 .contact-info {
     display: flex;
     flex-flow: row wrap;
@@ -291,4 +311,131 @@ section.personal-info {
     text-decoration: underline 2px;
     text-underline-offset: 2px;
     flex-basis: 20%
+}
+
+.personal-info p{
+    margin-top: 10px;
+}
+/* Contact info syling ends here */
+
+/* MEDIA QUERY FOR SMALLER DESKTOPS SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    .hero {
+        padding: 220px
+    }
+
+    .hero h2 {
+        left: 205px;
+        top: 200px;
+        font-size: 20px;
+    }
+
+    .personal-info h3 {
+        font-size: 18px;
+    }
+
+    .personal-info p {
+        font-size: 16px
+    }
+
+    .personal-info  div {
+        flex-basis: auto;
+    }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    .hero {
+        padding: 170px
+    }
+
+    .hero h2 {
+        left: 156px;
+        top: 156px;
+        font-size: 20px;
+        flex-basis: 0%;
+    }
+
+    .personal-info h3 {
+        font-size: 18px;
+    }
+
+    .personal-info p {
+        font-size: 16px
+    }
+
+    .personal-info div {
+        flex-basis: auto;
+    }
+
+}
+
+/* MEDIA QUERY FOR PHONE SCREENS AND SMALLER */
+@media screen and (max-width: 575px) {
+    header h1 {
+        padding: 0 0 0 8px;
+    }
+
+    header h1 a {
+        font-size: 20px;
+    }
+
+    header nav ul li a {
+        padding: 10px 4px;
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 126px
+    }
+
+    .hero h2 {
+        left: 114px;
+        top: 118px;
+        font-size: 16px;
+    }
+
+    .my-info p{
+        font-size: 20px;
+    }
+
+    .my-info article p {
+        font-size: 12px;
+    }
+
+    .my-work p {
+        font-size: 20px;
+    }
+
+    div.led-wall{
+        flex-basis: 47%;
+    }
+
+    div.calculator {
+        flex-grow: 49;
+    }
+
+    div.pastel-puzzles {
+        flex-basis: 47%;
+    }
+
+    div.run-buddy {
+        flex-grow: 49;
+    }
+
+    .contact-info p {
+        font-size: 20px;
+    }
+
+    .personal-info h3 {
+        font-size: 14px;
+    }
+
+    .personal-info p {
+        font-size: 12px;
+    }
+
+    .personal-info div {
+        flex-basis: auto;
+    }
 }
