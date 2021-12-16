@@ -46,9 +46,9 @@ header nav ul li a {
 
 /* Hero styling begins here */
 .hero {
-    background-image: url("../images/hero-img-3.jpeg");
+    background-image: url("../images/IMG_0359_Original.jpg");
     background-size: cover;
-    background-position:center;
+    background-position: top;
     padding: 200px;
     display: flex;
     flex-flow: row wrap;
@@ -63,6 +63,11 @@ header nav ul li a {
     top: 180px;
     padding: 4px;
 }
+
+/* .hero img {
+    height: 20px;
+    position: relative;
+} */
 /* Hero styling ends here */
 
 /* About Me styling starts here */
