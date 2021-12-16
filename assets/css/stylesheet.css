@@ -129,6 +129,9 @@ div.surf-report  {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
+    background-image: url("../images/surf-img.jpeg");
+    background-position: center;
+    background-size: cover;
 }
 
 .surf-report h3 {
@@ -139,14 +142,20 @@ div.surf-report  {
     text-align: right;
     width: fit-content;
     padding: 10px;
-    color: aliceblue;
+}
+
+.surf-report a {
+    text-decoration: none;
+    color:antiquewhite
 }
 
 div.led-wall {
     flex-basis: 50%;
     border: solid 2px rgb(2 110 180);
     margin: 4px 4px 4px 0;
-    padding: 50px;
+    padding: 50px;background-image: url("../images/led-img.webp");
+    background-position: center;
+    background-size: cover;
 }
 
 .led-wall h3 {
@@ -157,7 +166,11 @@ div.led-wall {
     text-align: right;
     width: fit-content;
     padding: 10px;
-    color: aliceblue;
+}
+
+.led-wall a {
+    text-decoration: none;
+    color:antiquewhite
 }
     
 div.calculator {
@@ -165,6 +178,9 @@ div.calculator {
     margin: 4px 0px 4px 4px;
     flex-grow: 50;
     padding: 50px;
+    background-image: url("../images/calculator-img.jpeg");
+    background-position: center;
+    background-size: cover;
 }
     
 .calculator h3 {
@@ -175,14 +191,26 @@ div.calculator {
     text-align: right;
     width: fit-content;
     padding: 10px;
-    color: aliceblue;
 } 
+
+.calculator a {
+    text-decoration: none;
+    color:antiquewhite
+}
 
 div.pastel-puzzles {
     flex-basis: 50%;
     border: solid 2px rgb(2 110 180);
     margin: 4px 4px 0px 0;
     padding: 50px;
+    background-image: url("../images/pastel-puzzle-img.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+.pastel-puzzles a {
+    text-decoration: none;
+    color:antiquewhite
 }
     
 .pastel-puzzles h3 {
@@ -193,7 +221,7 @@ div.pastel-puzzles {
     text-align: right;
     width: fit-content;
     padding: 10px;
-    color: aliceblue;
+    color:antiquewhite;
 }
     
 div.run-buddy {
@@ -201,6 +229,9 @@ div.run-buddy {
     margin: 4px 0px 0px 4px;
     flex-grow: 50;
     padding: 50px;
+    background-image: url("../images/hero-bg.jpeg");
+    background-position: center;
+    background-size: cover;
 }
     
 .run-buddy h3 {
@@ -211,7 +242,11 @@ div.run-buddy {
     text-align: right;
     width: fit-content;
     padding: 10px;
-    color: aliceblue;
+}
+
+.run-buddy a {
+    text-decoration: none;
+    color:antiquewhite
 }
 
 .contact-info {
