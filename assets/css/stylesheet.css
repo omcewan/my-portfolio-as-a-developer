@@ -19,12 +19,12 @@ header {
 }
 
 header h1 {
-    background-color: turquoise;
-    padding-left: 10px;
-    flex-basis: 24%;
-    align-self: center;
-    font-size: 34px;
-    text-align: center;
+  background-color: turquoise;
+  padding-left: 10px;
+  flex-basis: 24%;
+  align-self: center;
+  font-size: 34px;
+  text-align: center;
 }
 
 header h1 a {
@@ -33,8 +33,8 @@ header h1 a {
 }
 
 header nav {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 header nav ul {
@@ -92,6 +92,7 @@ header nav ul li a {
 .my-info h2 {
   text-align: right;
   color: rgb(2 110 180);
+  font-size: 30px;
 }
 
 .my-info article {
@@ -119,6 +120,7 @@ header nav ul li a {
 .my-work h2 {
   text-align: right;
   color: rgb(2 110 180);
+  font-size: 30px;
 }
 
 div.projects {
@@ -139,7 +141,6 @@ div.surf-report {
   padding: 100px;
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
   background-image: url("../images/surf-img.jpeg");
   background-position: center;
   background-size: cover;
@@ -154,9 +155,9 @@ div.surf-report:hover {
   position: relative;
   top: 80px;
   right: 100px;
-  text-align: right;
-  width: fit-content;
-  padding: 10px;
+  flex-basis: 20%;
+  text-align: center;
+  font-size: 26px;
 }
 
 .surf-report a {
@@ -165,6 +166,8 @@ div.surf-report:hover {
 }
 
 div.led-wall {
+  display: flex;
+  flex-flow: row wrap;
   flex-basis: 50%;
   border: solid 2px rgb(2 110 180);
   margin: 4px 4px 4px 0;
@@ -183,9 +186,10 @@ div.led-wall:hover {
   position: relative;
   top: 30px;
   right: 50px;
-  text-align: right;
-  width: fit-content;
-  padding: 10px;
+  text-align: center;
+  flex-basis: 26%;
+  align-self: flex-end;
+  font-size: 26px;
 }
 
 .led-wall a {
@@ -194,6 +198,8 @@ div.led-wall:hover {
 }
 
 div.calculator {
+  display: flex;
+  flex-flow: row wrap;
   border: solid 2px rgb(2 110 180);
   margin: 4px 0px 4px 4px;
   flex-grow: 50;
@@ -212,9 +218,10 @@ div.calculator:hover {
   position: relative;
   top: 30px;
   right: 50px;
-  text-align: right;
-  width: fit-content;
-  padding: 10px;
+  text-align: center;
+  flex-basis: 20%;
+  align-self: flex-end;
+  font-size: 26px;
 }
 
 .calculator a {
@@ -223,12 +230,14 @@ div.calculator:hover {
 }
 
 div.motar {
+  display: flex;
+  flex-flow: row wrap;
   flex-basis: 50%;
   border: solid 2px rgb(2 110 180);
   margin: 4px 4px 0px 0;
   padding: 50px;
   background-image: url("../images/motar.jpg");
-  background-position: center;
+  background-position-y: -50px;
   background-size: cover;
 }
 
@@ -246,13 +255,15 @@ div.motar:hover {
   position: relative;
   top: 30px;
   right: 50px;
-  text-align: right;
-  width: fit-content;
-  padding: 10px;
-  color: antiquewhite;
+  text-align: center;
+  flex-basis: 20%;
+  align-self: flex-end;
+  font-size: 26px;
 }
 
 div.run-buddy {
+    display: flex;
+    flex-flow: row wrap;
   border: solid 2px rgb(2 110 180);
   margin: 4px 0px 0px 4px;
   flex-grow: 50;
@@ -271,9 +282,10 @@ div.run-buddy:hover {
   position: relative;
   top: 30px;
   right: 50px;
-  text-align: right;
-  width: fit-content;
-  padding: 10px;
+  text-align: center;
+  flex-basis: 32%;
+  align-self: flex-end;
+  font-size: 26px;
 }
 
 .run-buddy a {
@@ -299,6 +311,7 @@ div.run-buddy:hover {
 .contact-info h2 {
   text-align: right;
   color: rgb(2 110 180);
+  font-size: 30px;
 }
 
 .personal-info {
