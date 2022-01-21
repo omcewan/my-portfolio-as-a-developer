@@ -59,7 +59,6 @@ header nav ul li a {
   background-image: url("../images/IMG_0359_Original.jpg");
   background-size: contain;
   background-position-x: -110px;
-  /* padding: 500px; */
   height: 400px;
   display: flex;
   flex-flow: row wrap;
@@ -262,8 +261,8 @@ div.motar:hover {
 }
 
 div.run-buddy {
-    display: flex;
-    flex-flow: row wrap;
+  display: flex;
+  flex-flow: row wrap;
   border: solid 2px rgb(2 110 180);
   margin: 4px 0px 0px 4px;
   flex-grow: 50;
@@ -342,15 +341,48 @@ section.personal-info {
 
 /* MEDIA QUERY FOR SMALLER DESKTOPS SCREENS AND SMALLER */
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1024px) {
   .hero {
     padding: 220px;
+    background-position-x: 2px;
+  }
+
+  header h1 {
+    font-size: 28px;
   }
 
   .hero h2 {
-    left: 205px;
-    top: 200px;
+    position: relative;
+    left: 220px;
+    top: 175px;
+  }
+
+  .my-info h2,
+  .my-work h2,
+  .contact-info h2 {
+    font-size: 26px;
+  }
+
+  .surf-report h3 {
     font-size: 20px;
+  }
+
+  .led-wall h3,
+  .run-buddy h3 {
+    flex-basis: 50%;
+    font-size: 20px;
+  }
+
+  .calculator h3,
+  .motar h3 {
+    font-size: 20px;
+  }
+
+  .motar h3 {
+    font-size: 20px;
+  }
+  div .motar {
+    background-position-y: -30px;
   }
 
   .personal-info h3 {
@@ -358,7 +390,7 @@ section.personal-info {
   }
 
   .personal-info p {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .personal-info div {
@@ -368,23 +400,54 @@ section.personal-info {
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 20px;
+  }
+
+  header nav ul li a {
+    font-size: 12px;
+  }
+
   .hero {
-    padding: 170px;
+    padding: 200px;
+    background-size: cover;
   }
 
   .hero h2 {
-    left: 156px;
-    top: 156px;
-    font-size: 20px;
-    flex-basis: 0%;
+    left: 200px;
+    top: 160px;
+    font-size: 18px;
+    flex-basis: 81%;
+  }
+
+  .my-info h2,
+  .my-work h2,
+  .contact-info h2 {
+    font-size: 22px;
+  }
+
+  .surf-report h3 {
+    flex-basis: 30%;
+    font-size: 16px;
+  }
+
+  .led-wall h3,
+  .run-buddy h3 {
+    flex-basis: 50%;
+    font-size: 16px;
+  }
+
+  .calculator h3,
+  .motar h3 {
+    font-size: 16px;
   }
 
   .personal-info h3 {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .personal-info p {
-    font-size: 16px;
+    font-size: 12px;
   }
 
   .personal-info div {
@@ -395,58 +458,54 @@ section.personal-info {
 /* MEDIA QUERY FOR PHONE SCREENS AND SMALLER */
 @media screen and (max-width: 575px) {
   header h1 {
-    padding: 0 0 0 8px;
-  }
-
-  header h1 a {
-    font-size: 20px;
+    font-size: 12px;
   }
 
   header nav ul li a {
-    padding: 10px 4px;
-    font-size: 14px;
+    font-size: 10px;
   }
 
   .hero {
-    padding: 126px;
+    padding: 200px;
+    background-size: cover;
+    background-position-x: -110px;
   }
 
   .hero h2 {
-    left: 114px;
-    top: 118px;
-    font-size: 16px;
+    left: 200px;
+    top: 86px;
+    font-size: 20px;
+    flex-basis: 100%;
   }
 
-  .my-info p {
-    font-size: 20px;
+  .my-info h2,
+  .my-work h2,
+  .contact-info h2 {
+    font-size: 16px;
   }
 
   .my-info article p {
     font-size: 12px;
   }
 
-  .my-work p {
-    font-size: 20px;
+  div .surf-report {
+    flex-basis: 100%;
   }
 
   div.led-wall {
-    flex-basis: 47%;
+    flex-basis: 100%;
   }
 
   div.calculator {
-    flex-grow: 49;
+    flex-basis: 100%;
   }
 
   div.motar {
-    flex-basis: 47%;
+    flex-basis: 100%;
   }
 
   div.run-buddy {
-    flex-grow: 49;
-  }
-
-  .contact-info p {
-    font-size: 20px;
+    flex-basis: 100%;
   }
 
   .personal-info h3 {
