@@ -196,34 +196,34 @@ div.led-wall:hover {
   color: antiquewhite;
 }
 
-div.calculator {
+div.family {
   display: flex;
   flex-flow: row wrap;
   border: solid 2px rgb(2 110 180);
   margin: 4px 0px 4px 4px;
   flex-grow: 50;
   padding: 50px;
-  background-image: url("../images/calculator-img.jpeg");
-  background-position: center;
+  background-image: url("../images/family_fit.png");
+  background-position-y: 5px;
   background-size: cover;
 }
 
-div.calculator:hover {
+div.family:hover {
   opacity: 0.5;
 }
 
-.calculator h3 {
+.family h3 {
   background-color: rgb(2 110 180);
   position: relative;
   top: 30px;
   right: 50px;
   text-align: center;
-  flex-basis: 20%;
+  flex-basis: 28%;
   align-self: flex-end;
   font-size: 26px;
 }
 
-.calculator a {
+.family a {
   text-decoration: none;
   color: antiquewhite;
 }
@@ -373,7 +373,7 @@ section.personal-info {
     font-size: 20px;
   }
 
-  .calculator h3,
+  .family h3,
   .motar h3 {
     font-size: 20px;
   }
@@ -437,7 +437,7 @@ section.personal-info {
     font-size: 16px;
   }
 
-  .calculator h3,
+  .family h3,
   .motar h3 {
     font-size: 16px;
   }
@@ -496,7 +496,7 @@ section.personal-info {
     flex-basis: 100%;
   }
 
-  div.calculator {
+  div.family {
     flex-basis: 100%;
   }
 
